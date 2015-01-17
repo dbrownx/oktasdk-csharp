@@ -26,7 +26,7 @@ namespace Okta.Core.Models
         public string RecoveryToken { get; set; }
 
         [JsonProperty("expiresAt")]
-        public DateTime ExpiresAt { get; set; }
+        public DateTime? ExpiresAt { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }

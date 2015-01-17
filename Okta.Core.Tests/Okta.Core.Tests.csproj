@@ -76,6 +76,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BaseTest.cs" />
+    <Compile Include="UsersClientTest.cs" />
     <Compile Include="FilterBuilderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AuthClientTest.cs" />

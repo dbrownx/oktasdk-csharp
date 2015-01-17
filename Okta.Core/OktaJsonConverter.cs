@@ -207,20 +207,6 @@ namespace Okta.Core
                         resultToken = WalkObject(v);
                     }
 
-                    // Handle DateTime case
-                    else if (typeof(DateTime).IsAssignableFrom(p.PropertyType))
-                    {
-                        var dateTimeValue = (DateTime)v;
-                        if (dateTimeValue != default(DateTime))
-                        {
-                            resultToken = JToken.FromObject(v);
-                        }
-                        else
-                        {
-                            continue;
-                        }
-                    }
-
                     // Handle the Link dictionary case
                     else if (typeof(Dictionary<string, List<Link>>).IsAssignableFrom(p.PropertyType))
                     {

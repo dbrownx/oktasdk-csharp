@@ -265,13 +265,13 @@ namespace Okta.Core.Models
         /// Timestamp when app was created
         /// </summary>
         [JsonProperty("created")]
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
 
         /// <summary>
         /// Timestamp when app was last updated
         /// </summary>
         [JsonProperty("lastUpdated")]
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
 
         /// <summary>
         /// Status of app
@@ -283,7 +283,7 @@ namespace Okta.Core.Models
         /// Timestamp when transition to ACTIVE status completed
         /// </summary>
         [JsonProperty("activated")]
-        public DateTime Activated { get; set; }
+        public DateTime? Activated { get; set; }
 
         /// <summary>
         /// Enabled app features

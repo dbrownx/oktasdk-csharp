@@ -96,7 +96,7 @@ namespace Okta.Core.Models
         /// The timestamp when factor was created
         /// </value>
         [JsonProperty("created")]
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
 
         /// <summary>
         /// Gets or sets the timestamp when factor was last updated.
@@ -105,7 +105,7 @@ namespace Okta.Core.Models
         /// The timestamp when factor was last updated.
         /// </value>
         [JsonProperty("lastUpdated")]
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
 
         /// <summary>
         /// Gets or sets the profile of a supported factor.

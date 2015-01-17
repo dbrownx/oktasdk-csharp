@@ -16,7 +16,7 @@ namespace Okta.Core.Models
         /// Timestamp when app group was last updated
         /// </summary>
         [JsonProperty("lastUpdated")]
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
 
         /// <summary>
         /// Priority of group assignment

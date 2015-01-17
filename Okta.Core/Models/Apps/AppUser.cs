@@ -22,13 +22,13 @@ namespace Okta.Core.Models
         /// Timestamp when user was created
         /// </summary>
         [JsonProperty("created")]
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
 
         /// <summary>
         /// Timestamp when user was last updated
         /// </summary>
         [JsonProperty("lastUpdated")]
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
 
         /// <summary>
         /// Toggles the assignment between user or group scope
@@ -46,13 +46,13 @@ namespace Okta.Core.Models
         /// Timestamp when status last changed
         /// </summary>
         [JsonProperty("statusChanged")]
-        public DateTime StatusChanged { get; set; }
+        public DateTime? StatusChanged { get; set; }
 
         /// <summary>
         /// Timestamp when app password last changed
         /// </summary>
         [JsonProperty("passwordChanged")]
-        public DateTime PasswordChanged { get; set; }
+        public DateTime? PasswordChanged { get; set; }
 
         /// <summary>
         /// Synchronization state for app user
@@ -64,7 +64,7 @@ namespace Okta.Core.Models
         /// Timestamp when last sync operation was executed
         /// </summary>
         [JsonProperty("lastSynced")]
-        public DateTime LastSynced { get; set; }
+        public DateTime? LastSynced { get; set; }
 
         /// <summary>
         /// Credentials for assigned app

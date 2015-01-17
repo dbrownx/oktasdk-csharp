@@ -47,37 +47,37 @@ namespace Okta.Core.Models
         /// Timestamp when user was created
         /// </summary>
         [JsonProperty("created")]
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
 
         /// <summary>
         /// Timestamp when transition to ACTIVE status completed
         /// </summary>
         [JsonProperty("activated")]
-        public DateTime Activated { get; set; }
+        public DateTime? Activated { get; set; }
 
         /// <summary>
         /// Timestamp when status last changed
         /// </summary>
         [JsonProperty("statusChanged")]
-        public DateTime StatusChanged { get; set; }
+        public DateTime? StatusChanged { get; set; }
 
         /// <summary>
         /// Timestamp of last login
         /// </summary>
         [JsonProperty("lastLogin")]
-        public DateTime LastLogin { get; set; }
+        public DateTime? LastLogin { get; set; }
 
         /// <summary>
         /// Timestamp when user was last updated
         /// </summary>
         [JsonProperty("lastUpdated")]
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
 
         /// <summary>
         /// Timestamp when password last changed
         /// </summary>
         [JsonProperty("passwordChanged")]
-        public DateTime PasswordChanged { get; set; }
+        public DateTime? PasswordChanged { get; set; }
 
         /// <summary>
         /// Target status of an inprogress asynchronous status transition

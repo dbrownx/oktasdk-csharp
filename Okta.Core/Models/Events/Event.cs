@@ -22,7 +22,7 @@ namespace Okta.Core.Models
         /// Timestamp when event was published  
         /// </summary>
         [JsonProperty("published")]
-        public DateTime Published { get; set; }
+        public DateTime? Published { get; set; }
 
         /// <summary>
         /// Identifies the request
